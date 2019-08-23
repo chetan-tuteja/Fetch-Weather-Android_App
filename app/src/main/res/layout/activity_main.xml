@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:background="@color/Butterfly_Blue"
+
+        android:layout_height="match_parent"
+        tools:context=".MainActivity">
+
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/welcome"
+            android:textSize="48sp"
+            android:fontFamily="sans-serif-condensed-medium"
+            android:textColor="#000"
+            android:layout_marginEnd="8dp"
+            app:layout_constraintEnd_toEndOf="parent" android:layout_marginStart="8dp"
+            app:layout_constraintStart_toStartOf="parent" android:layout_marginTop="8dp"
+            app:layout_constraintTop_toTopOf="parent" android:id="@+id/welcomeTV"/>
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/to_the"
+            android:textSize="48sp"
+            android:fontFamily="sans-serif-condensed-medium"
+            android:textColor="#000"
+            android:layout_marginTop="16dp" app:layout_constraintTop_toBottomOf="@+id/welcomeTV"
+            android:id="@+id/toTheTV"
+            android:layout_marginStart="8dp" app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginEnd="8dp" app:layout_constraintEnd_toEndOf="parent"/>
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/app"
+            android:textSize="48sp"
+            android:fontFamily="sans-serif-condensed-medium"
+            android:textColor="#000"
+            android:id="@+id/appTV"
+            app:layout_constraintTop_toBottomOf="@+id/toTheTV"
+            android:layout_marginTop="16dp"
+            android:layout_marginStart="8dp" app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginEnd="8dp" app:layout_constraintEnd_toEndOf="parent"/>
+
+
+    <com.beardedhen.androidbootstrap.BootstrapEditText
+            android:layout_width="match_parent"
+            android:layout_height="54dp"
+            android:padding="16dp"
+            app:bootstrapBrand="success"
+            android:hint="@string/enter_city"
+            app:roundedCorners="true"
+            android:textColorHint="#000"
+            android:imeOptions="actionDone"
+            android:inputType="text"
+            android:maxLines="1"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginEnd="24dp" app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginStart="24dp" app:layout_constraintHorizontal_bias="0.272"
+            android:layout_marginTop="8dp" app:layout_constraintTop_toBottomOf="@+id/appTV"
+            app:layout_constraintVertical_bias="0.071" android:id="@+id/getCityET"/>
+
+    <com.beardedhen.androidbootstrap.BootstrapButton
+            android:layout_width="154dp"
+            android:layout_height="70dp"
+            app:roundedCorners="true"
+            android:text="@string/get_weather"
+            app:bootstrapSize="lg"
+            android:onClick="getWeatherClick"
+            app:bootstrapBrand="success"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginEnd="8dp" app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginStart="8dp" android:layout_marginBottom="8dp"
+            app:layout_constraintBottom_toBottomOf="parent" android:layout_marginTop="8dp"
+            app:layout_constraintTop_toBottomOf="@+id/getCityET" app:layout_constraintHorizontal_bias="0.497"
+            app:layout_constraintVertical_bias="0.115" android:id="@+id/btnGetWeather"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#008577</color>
+    <color name="colorPrimaryDark">#00574B</color>
+    <color name="colorAccent">#D81B60</color>
+    <color name="Lavender">#e6e6fa</color>
+    <color name="Butterfly_Blue">#5FBDEF</color>
+    <color name="Butterfly_Dark">#2C8ABC</color>
+    <color name="Butterfly_Darker">#1C5676</color>
+    <color name="Beige">#e1c699</color>
+</resources>

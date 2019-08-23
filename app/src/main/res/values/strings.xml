@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">FetchWeather</string>
+    <string name="enter_city">Enter a city!</string>
+    <string name="welcome">WELCOME</string>
+    <string name="to_the">TO THE</string>
+    <string name="app">APP!</string>
+    <string name="get_weather">Get Weather!</string>
+    <string name="no_city">You must enter a valid city to continue!</string>
+    <string name="no_internet">OOPS! You don\'t seem to be connected to the internet.</string>
+    <string name="temp">Temprature:</string>
+    <string name="pressure">Pressure:</string>
+    <string name="Humidity">Humidity:</string>
+    <string name="Wind">Wind:</string>
+    <string name="made_by">Made with ♥ by Chetan.</string>
+
+</resources>
